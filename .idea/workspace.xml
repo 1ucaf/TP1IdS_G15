@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="789b9ea4-e9d9-48eb-b1e1-fa22c2a59ae5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.vs/TP1IdS_G15/config/applicationhost.config" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TP1IdS_G15/config/applicationhost.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/TP1IdS_G15/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/TP1IdS_G15/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/ClassLibrary1.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/obj/Debug/ClassLibrary1.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassLibrary1/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/TP1IdS_G15AccesoADatos.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/TP1IdS_G15AccesoADatos.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15AccesoADatos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15AccesoADatos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15AccesoADatos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15AccesoADatos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15Modelo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15Modelo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15Modelo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/bin/Debug/TP1IdS_G15Modelo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15AccesoADatos/obj/Debug/TP1IdS_G15AccesoADatos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/Entidades/Marca.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/Entidades/Marca.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/Entidades/Rubro.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/Entidades/Rubro.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/bin/Debug/TP1IdS_G15Modelo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/bin/Debug/TP1IdS_G15Modelo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/bin/Debug/TP1IdS_G15Modelo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/bin/Debug/TP1IdS_G15Modelo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15Modelo/obj/Debug/TP1IdS_G15Modelo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/TP1IdS_G15WebService.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/TP1IdS_G15WebService.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/Web.config" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/Web.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15AccesoADatos.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15AccesoADatos.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15AccesoADatos.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15AccesoADatos.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15Modelo.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15Modelo.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15Modelo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15Modelo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/bin/TP1IdS_G15WebService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/TP1IdS_G15WebService/obj/Debug/TP1IdS_G15WebService.pdb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1zWJYEGKRnvToh8yqqeOXqtbTto" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="789b9ea4-e9d9-48eb-b1e1-fa22c2a59ae5" name="Changes" comment="" />
+      <created>1634257957938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634257957938</updated>
+    </task>
+    <servers />
+  </component>
+</project>

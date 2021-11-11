@@ -9,6 +9,13 @@ namespace TP1IdS_G15AccesoADatos
 {
     public static class Repositorio
     {
+        public static List<Cliente> Clientes = new List<Cliente>()
+        {
+            new Cliente()
+            {
+                RazonSocial = "Consumidor Final",
+            }
+        };
         public static List<Rubro> Rubros = new List<Rubro>
         {
             new Rubro { Id = "0", Descripcion = "Calzados" },
@@ -82,5 +89,15 @@ namespace TP1IdS_G15AccesoADatos
                 Rubro = Rubros[2],
             },
         };
+
+        public static Venta CreateNewVenta()
+        {
+            Cliente c = Clientes.Where(cliente => cliente.RazonSocial.Equals("Consumidor Final")).First();
+            Venta v = new Venta()
+            {
+                cliente = c,
+            };
+            return v;
+        }
     }
 }

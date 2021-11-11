@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1IdS_G15AccesoADatos", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1IdS_G15WebService", "TP1IdS_G15WebService\TP1IdS_G15WebService.csproj", "{61ADBE46-E35D-4C41-ABC5-A827DEC63EA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP1IdS_G15WebServiceASMX", "TP1IdS_G15WebServiceASMX\TP1IdS_G15WebServiceASMX.csproj", "{7FD78501-4358-4C9F-ADEC-AC40FE7D269B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{9CF933A4-AFC5-47AC-8147-5C4215913EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{61ADBE46-E35D-4C41-ABC5-A827DEC63EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61ADBE46-E35D-4C41-ABC5-A827DEC63EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61ADBE46-E35D-4C41-ABC5-A827DEC63EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD78501-4358-4C9F-ADEC-AC40FE7D269B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD78501-4358-4C9F-ADEC-AC40FE7D269B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD78501-4358-4C9F-ADEC-AC40FE7D269B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD78501-4358-4C9F-ADEC-AC40FE7D269B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF933A4-AFC5-47AC-8147-5C4215913EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF933A4-AFC5-47AC-8147-5C4215913EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF933A4-AFC5-47AC-8147-5C4215913EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF933A4-AFC5-47AC-8147-5C4215913EA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,5 +11,9 @@ namespace TP1IdS_G15Modelo.Entidades
         public string Id { get; set; }
         public string Descripcion { get; set; }
 
+        public override string ToString()
+        {
+            return Descripcion;
+        }
     }
 }
