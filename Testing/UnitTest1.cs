@@ -80,9 +80,6 @@ namespace Testing
             double IVAExpected = 25.2;
             double IVA = p.IVA;
             Assert.AreEqual(IVAExpected, IVA, 0, "IVA no generado correctamente");
-            double precioVentaExpected = 145.2;
-            double precioVenta = p.PrecioVenta;
-            Assert.AreEqual(precioVentaExpected, precioVenta, 0, "Precio de Venta no generado correctamente");
         }
 
         [TestMethod]
