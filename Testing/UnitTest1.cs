@@ -36,81 +36,79 @@ namespace Testing
 
 
         [TestMethod]
-        public void CreateNewProductAndCheckNetoGravadoCalculated()
+        public void CreateNewProductAndCheckNetoGravadoCalculatedCorrectly()
         {
-            int coddigoDeBarra = 1;
-            string descripcion = "";
+            //Configuración
             double costo = 100;
             double margenDeGanancia = 20;
-            double porcentajeIVA = 21;
-
-            Producto p = new Producto()
-            {
-                CodigoDeBarra = coddigoDeBarra,
-                Descripcion = descripcion,
-                Costo = costo,
-                MargenDeGanancia = margenDeGanancia,
-                PorcentajeIVA = porcentajeIVA,
-            };
 
             double netoGravadoExpected = 120;
+
+            //Ejecución
+            Producto p = new Producto()
+            {
+                Costo = costo,
+                MargenDeGanancia = margenDeGanancia,
+            };
+
+            //Comprobación
             double netoGravado = p.NetoGravado;
-            Assert.AreEqual(netoGravadoExpected, netoGravado, 0, "Neto Gravado no generado correctamente");
+            Assert.AreEqual(netoGravadoExpected, netoGravado, 0, "Neto Gravado no generado correctamente. Esperado: " + 120 + ". Obtenido: " + netoGravado);
         }
 
         [TestMethod]
-        public void CreateNewProductAndCheckIVACalculated()
+        public void CreateNewProductAndCheckIVACalculatedCorrectly()
         {
-            int coddigoDeBarra = 1;
-            string descripcion = "";
+            //Configuración
             double costo = 100;
             double margenDeGanancia = 20;
             double porcentajeIVA = 21;
-
-            Producto p = new Producto()
-            {
-                CodigoDeBarra = coddigoDeBarra,
-                Descripcion = descripcion,
-                Costo = costo,
-                MargenDeGanancia = margenDeGanancia,
-                PorcentajeIVA = porcentajeIVA,
-            };
-
-            
             double IVAExpected = 25.2;
-            double IVA = p.IVA;
-            Assert.AreEqual(IVAExpected, IVA, 0, "IVA no generado correctamente");
-        }
 
-        [TestMethod]
-        public void CreateNewProductAndCheckPrecioDeVentaCalculated()
-        {
-            int coddigoDeBarra = 1;
-            string descripcion = "";
-            double costo = 100;
-            double margenDeGanancia = 20;
-            double porcentajeIVA = 21;
-
+            //Ejecución
             Producto p = new Producto()
             {
-                CodigoDeBarra = coddigoDeBarra,
-                Descripcion = descripcion,
                 Costo = costo,
                 MargenDeGanancia = margenDeGanancia,
                 PorcentajeIVA = porcentajeIVA,
             };
 
 
+            //Comprobación
+            double IVA = p.IVA;
+            Assert.AreEqual(IVAExpected, IVA, 0, "IVA no generado correctamente. Esperado: " + 120 + ". Obtenido: " + IVA );
+        }
+
+        [TestMethod]
+        public void CreateNewProductAndCheckPrecioDeVentaCalculatedCorrectly()
+        {
+            //Configuración
+            double costo = 100;
+            double margenDeGanancia = 20;
+            double porcentajeIVA = 21;
+
+            //Ejecución
+            Producto p = new Producto()
+            {
+                Costo = costo,
+                MargenDeGanancia = margenDeGanancia,
+                PorcentajeIVA = porcentajeIVA,
+            };
+
+
+            //Comprobación
             double precioVentaExpected = 145.2;
             double precioVenta = p.PrecioVenta;
-            Assert.AreEqual(precioVentaExpected, precioVenta, 0, "Precio de Venta no generado correctamente");
+            Assert.AreEqual(precioVentaExpected, precioVenta, 0, "Precio de Venta no generado correctamente. Esperado: " + 120 + ". Obtenido: " + precioVenta);
         }
 
         [TestMethod]
-        public void CreateANewSell_ShouldAttachClienteConsumidorFinal()
+        public void CreateANewSale_ShouldAttachClienteConsumidorFinal()
         {
+            //Ejecución
             Venta v = Repositorio.CreateNewVenta();
 
+            //Comprobación
             Assert.AreEqual("Consumidor Final".ToLower(), v.cliente.RazonSocial.ToLower(), "", "Datos de Venta autogenerados incorrectamente. No se asoció o no existe el Cliente 'Consumidor Final'");
         }
     }
