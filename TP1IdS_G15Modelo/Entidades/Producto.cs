@@ -14,6 +14,23 @@ namespace TP1IdS_G15Modelo.Entidades
         private double _margenDeGanancia;
         #endregion
 
+        #region Constructors
+        public Producto()
+        {
+        }
+
+        public Producto(int _CodigoDeBarra, string _Descripcion, double _Costo, double _MargenDeGanancia, double _PorcentajeIVA, Marca _Marca, Rubro _Rubro)
+        {
+            CodigoDeBarra = _CodigoDeBarra;
+            Descripcion = _Descripcion;
+            Costo = _Costo;
+            MargenDeGanancia = _MargenDeGanancia;
+            PorcentajeIVA = _PorcentajeIVA;
+            Rubro = _Rubro;
+            Marca = _Marca;
+        }
+        #endregion
+
         #region properties
         public int CodigoDeBarra { get; set; }
         public string Descripcion { get; set; }
