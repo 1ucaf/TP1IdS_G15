@@ -95,7 +95,7 @@ namespace TP1IdS_G15AccesoADatos
             Cliente c = Clientes.Where(cliente => cliente.RazonSocial.Equals("Consumidor Final")).First();
             Venta v = new Venta()
             {
-                cliente = c,
+                Cliente = c,
             };
             return v;
         }

@@ -109,7 +109,7 @@ namespace Testing
             Venta v = Repositorio.CreateNewVenta();
 
             //Comprobación
-            Assert.AreEqual("Consumidor Final".ToLower(), v.cliente.RazonSocial.ToLower(), "", "Datos de Venta autogenerados incorrectamente. No se asoció o no existe el Cliente 'Consumidor Final'");
+            Assert.AreEqual("Consumidor Final".ToLower(), v.Cliente.RazonSocial.ToLower(), "", "Datos de Venta autogenerados incorrectamente. No se asoció o no existe el Cliente 'Consumidor Final'");
         }
     }
 }
