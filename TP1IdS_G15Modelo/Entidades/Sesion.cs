@@ -8,8 +8,8 @@ namespace TP1IdS_G15Modelo.Entidades
 {
     public class Sesion
     {
-        public int legajo { get; set; }
-        public string nombre { get; set; }
-
+        public bool IsActive { get; set; }
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
     }
 }

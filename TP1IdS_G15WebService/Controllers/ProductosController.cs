@@ -11,7 +11,7 @@ using TP1IdS_G15WebService.Models;
 
 namespace TP1IdS_G15WebService.Controllers
 {
-    //[EnableCors(origins: "*", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("productos")]
     public class ProductosController : ApiController
     {

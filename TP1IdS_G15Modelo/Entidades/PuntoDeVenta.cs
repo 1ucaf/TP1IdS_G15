@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,9 +9,10 @@ namespace TP1IdS_G15Modelo.Entidades
 {
     public class PuntoDeVenta
     {
-        public int NumeroPDV { get; set; }
-        public Sesion sesion { get; set; }
-        public List<Venta> venta { get; set; }
-
+        [Key]
+        public int Id { get; set; }
+        public long NumeroPDV { get; set; }
+        public int SesionId { get; set; }
+        public virtual Sesion Sesion { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,6 +33,7 @@ namespace TP1IdS_G15Modelo.Entidades
         #endregion
 
         #region properties
+        [Key]
         public int CodigoDeBarra { get; set; }
         public string Descripcion { get; set; }
         public double Costo { get; set; }
@@ -79,8 +81,10 @@ namespace TP1IdS_G15Modelo.Entidades
                 return NetoGravado + IVA;
             }
         }
-        public Marca Marca { get; set; }
-        public Rubro Rubro { get; set; }
+        public int MarcaId { get; set; }
+        public int RubroId { get; set; }
+        public virtual Marca Marca { get; set; }
+        public virtual Rubro Rubro { get; set; }
         #endregion
     }
 }
