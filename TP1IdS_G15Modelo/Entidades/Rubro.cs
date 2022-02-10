@@ -10,7 +10,7 @@ namespace TP1IdS_G15Modelo.Entidades
     public class Rubro
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Descripcion { get; set; }
         public override string ToString()
         {

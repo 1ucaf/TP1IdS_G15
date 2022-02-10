@@ -13,7 +13,7 @@ namespace TP1IdS_G15WebService.Models
         public double Costo { get; set; }
         public double MargenDeGanancia { get; set; }
         public double PorcentajeIVA { get; set; }
-        public Marca Marca { get; set; }
-        public Rubro Rubro { get; set; }
+        public int MarcaId { get; set; }
+        public int RubroId { get; set; }
     }
 }
