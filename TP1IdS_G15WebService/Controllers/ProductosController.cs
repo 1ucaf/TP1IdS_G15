@@ -40,18 +40,19 @@ namespace TP1IdS_G15WebService.Controllers
             return Ok(producto);
         }
 
-        // PUT: api/Productos/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutProducto(int id, ProductoDTO productoDTO)
+        // PUT: api/Productos/?id=5
+        [HttpPut]
+        [Route("Modify")]
+        public HttpResponseMessage ModifyProducto(int id, [FromBody] ProductoDTO productoDTO)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
             }
 
             if (id != productoDTO.CodigoDeBarra)
             {
-                return BadRequest();
+                return Request.CreateResponse(HttpStatusCode.BadRequest);
             }
 
             Producto producto = db.Productos.Where(prod => prod.CodigoDeBarra == productoDTO.CodigoDeBarra).ToList().First();
@@ -69,7 +70,7 @@ namespace TP1IdS_G15WebService.Controllers
             {
                 if (!ProductoExists(id))
                 {
-                    return NotFound();
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
                 }
                 else
                 {
@@ -77,7 +78,7 @@ namespace TP1IdS_G15WebService.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Request.CreateResponse(HttpStatusCode.OK, producto);
         }
 
         [HttpPost]
