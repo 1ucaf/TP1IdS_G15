@@ -82,8 +82,8 @@ namespace TP1IdS_G15Modelo.Entidades
             }
         }
         public int MarcaId { get; set; }
-        public int RubroId { get; set; }
         public virtual Marca Marca { get; set; }
+        public int RubroId { get; set; }
         public virtual Rubro Rubro { get; set; }
         #endregion
     }

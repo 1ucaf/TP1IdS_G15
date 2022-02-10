@@ -14,5 +14,7 @@ namespace TP1IdS_G15Modelo.Entidades
         public long NumeroPDV { get; set; }
         public int SesionId { get; set; }
         public virtual Sesion Sesion { get; set; }
+        public int SucursalId { get; set; }
+        public virtual Sucursal Sucursal { get; set; }
     }
 }

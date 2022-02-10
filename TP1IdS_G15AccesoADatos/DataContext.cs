@@ -16,5 +16,8 @@ namespace TP1IdS_G15AccesoADatos
 
         }
         public DbSet<User> Users { get; set; }
+        public DbSet<Producto> Producto { get; set; }
+        public DbSet<Marca> Marca { get; set; }
+        public DbSet<Rubro> Rubro { get; set; }
     }
 }

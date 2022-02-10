@@ -61,10 +61,12 @@
     <Compile Include="Entidades\CondicionTributaria.cs" />
     <Compile Include="Entidades\Devolucion.cs" />
     <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\LineaDeCompra.cs" />
     <Compile Include="Entidades\LineaDeVenta.cs" />
     <Compile Include="Entidades\Marca.cs" />
     <Compile Include="Entidades\MedioDePago.cs" />
     <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Entidades\PuntoDeVenta.cs" />
     <Compile Include="Entidades\Rubro.cs" />
     <Compile Include="Entidades\Sesion.cs" />

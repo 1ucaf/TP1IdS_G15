@@ -15,9 +15,6 @@ namespace TP1IdS_G15Modelo.Entidades
         public int PuntoDeVentaId { get; set; }
         public virtual PuntoDeVenta PuntoDeVenta { get; set; }
         public MedioDePago MedioDePago { get; set; }
-        public int TipoComprobanteId { get; set; }
-        public virtual TipoComprobante TipoComprobante { get; set; }
-        public int ComprobanteId { get; set; }
         public virtual Comprobante Comprobante { get; set; }
         public int ClienteId { get; set; }
         public virtual Cliente Cliente { get; set; }

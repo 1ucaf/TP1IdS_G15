@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace TP1IdS_G15Modelo.Entidades
 {
-    public class TipoFactura
+    public class Proveedor
     {
         [Key]
         public int Id { get; set; }
-        public string Descripcion { get; set; }
+        public string CUIT { get; set; }
+        public string Domicilio { get; set; }
+        public string RazonSocial { get; set; }
     }
 }
