@@ -11,12 +11,13 @@ using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using TP1IdS_G15AccesoADatos;
 using TP1IdS_G15Modelo.Entidades;
-using TP1IdS_G15WebService.Models;
+using TP1IdS_G15Application.Models;
+using TP1IdS_G15WebService.TokenHandlers;
 
 namespace TP1IdS_G15WebService.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    [RoutePrefix("")]
+    [RoutePrefix("login")]
     public class SessionController : ApiController
     {
         private DataContext db = new DataContext();
@@ -24,7 +25,7 @@ namespace TP1IdS_G15WebService.Controllers
         // POST: api/Login
         [AllowAnonymous]
         [ResponseType(typeof(User))]
-        [Route("login")]
+        [Route("")]
         public IHttpActionResult Authenticate(LoginRequest login)
         { 
             if (login == null)
@@ -41,7 +42,13 @@ namespace TP1IdS_G15WebService.Controllers
             if (isCredentialValid)
             {
                 var token = TokenGenerator.GenerateTokenJwt(login.Username);
-                return Ok(token);
+                return Ok(
+                    new
+                    {
+                        Token = token,
+                        TipoUsuario = user.TipoUsuario.ToString()
+                    }
+                );
             }
             else
             {
@@ -51,7 +58,7 @@ namespace TP1IdS_G15WebService.Controllers
 
 
         [ResponseType(typeof(User))]
-        [Route("GetUser")]
+        [Route("")]
         public HttpResponseMessage GetUser(string token)
         {
             HttpStatusCode statusCode = HttpStatusCode.OK;

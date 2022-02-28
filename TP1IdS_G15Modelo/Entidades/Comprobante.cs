@@ -12,7 +12,6 @@ namespace TP1IdS_G15Modelo.Entidades
         [Key]
         public int Id { get; set; }
         public int VentaId { get; set; }
-        public virtual Venta Venta { get; set; }
         public virtual TipoComprobante TipoComprobante { get; set; }
     }
 }

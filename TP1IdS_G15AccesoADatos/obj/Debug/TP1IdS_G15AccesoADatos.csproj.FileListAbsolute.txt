@@ -37,5 +37,4 @@ C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Pr
 C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\obj\Debug\TP1IdS_G15AccesoADatos.Migrations.InitialMigration.resources
 C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\obj\Debug\TP1IdS_G15AccesoADatos.csproj.GenerateResource.cache
-C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\obj\Debug\TP1IdS_G15AccesoADatos.Migrations.Productos.resources
-C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\obj\Debug\TP1IdS_G15AccesoADatos.Migrations.Productos2.resources
+C:\Users\Admin\OneDrive - frt.utn.edu.ar\Facultad\4to\Ingeniería de Software\Práctica\TP1\Projects\TP1IdS_G15\TP1IdS_G15AccesoADatos\obj\Debug\TP1IdS_G15AccesoADatos.Migrations.NamesConvention.resources

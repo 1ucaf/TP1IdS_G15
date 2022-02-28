@@ -11,7 +11,9 @@ using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using TP1IdS_G15AccesoADatos;
 using TP1IdS_G15Modelo.Entidades;
-using TP1IdS_G15WebService.Models;
+using TP1IdS_G15WebService.CustomHTTPAttributes;
+using TP1IdS_G15Application.Models;
+using TP1IdS_G15Application;
 
 namespace TP1IdS_G15WebService.Controllers
 {
@@ -19,19 +21,24 @@ namespace TP1IdS_G15WebService.Controllers
     [RoutePrefix("productos")]
     public class ProductosController : ApiController
     {
-        private DataContext db = new DataContext();
-
+        ProductoManager AppLayer = new ProductoManager();
         // GET: api/Productos
-        public IQueryable<Producto> GetProducto()
+        public HttpResponseMessage GetProducto()
         {
-            return db.Productos;
+            return Request.CreateResponse(HttpStatusCode.OK, AppLayer.GetProductos().Select(p => new
+            {
+                CodigoDeBarra = p.CodigoDeBarra,
+                Descripcion = p.Descripcion,
+                PrecioVenta = p.PrecioVenta,
+                Marca = p.Marca.Descripcion
+            }));
         }
 
         // GET: api/Productos/5
         [ResponseType(typeof(Producto))]
         public IHttpActionResult GetProducto(int id)
         {
-            Producto producto = db.Productos.Find(id);
+            var producto = AppLayer.FindProducto(id);
             if (producto == null)
             {
                 return NotFound();
@@ -41,80 +48,77 @@ namespace TP1IdS_G15WebService.Controllers
         }
 
         // PUT: api/Productos/?id=5
-        [HttpPut]
-        [Route("Modify")]
-        public HttpResponseMessage ModifyProducto(int id, [FromBody] ProductoDTO productoDTO)
-        {
-            if (!ModelState.IsValid)
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
-            }
+        //[HttpPut]
+        //[Route("Modify")]
+        //public HttpResponseMessage ModifyProducto(int id, [FromBody] ProductoDTO productoDTO)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
+        //    }
 
-            if (id != productoDTO.CodigoDeBarra)
-            {
-                return Request.CreateResponse(HttpStatusCode.BadRequest);
-            }
+        //    if (id != productoDTO.CodigoDeBarra)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.BadRequest);
+        //    }
 
-            Producto producto = db.Productos.Where(prod => prod.CodigoDeBarra == productoDTO.CodigoDeBarra).ToList().First();
+        //    Producto producto = db.Productos.Where(prod => prod.CodigoDeBarra == productoDTO.CodigoDeBarra).ToList().First();
 
-            producto.Marca = db.Marcas.Where(marc => marc.Id == productoDTO.MarcaId).ToList().First();
-            producto.Rubro = db.Rubros.Where(rubr => rubr.Id == productoDTO.RubroId).ToList().First();
+        //    producto.Marca = db.Marcas.Where(marc => marc.Id == productoDTO.MarcaId).ToList().First();
+        //    producto.Rubro = db.Rubros.Where(rubr => rubr.Id == productoDTO.RubroId).ToList().First();
 
-            db.Entry(producto).State = EntityState.Modified;
+        //    db.Entry(producto).State = EntityState.Modified;
 
-            try
-            {
-                db.SaveChanges();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!ProductoExists(id))
-                {
-                    return Request.CreateResponse(HttpStatusCode.NotFound);
-                }
-                else
-                {
-                    throw;
-                }
-            }
+        //    try
+        //    {
+        //        db.SaveChanges();
+        //    }
+        //    catch (DbUpdateConcurrencyException)
+        //    {
+        //        if (!ProductoExists(id))
+        //        {
+        //            return Request.CreateResponse(HttpStatusCode.NotFound);
+        //        }
+        //        else
+        //        {
+        //            throw;
+        //        }
+        //    }
 
-            return Request.CreateResponse(HttpStatusCode.OK, producto);
-        }
+        //    return Request.CreateResponse(HttpStatusCode.OK, producto);
+        //}
 
-        [HttpPost]
-        [Route("initialize")]
-        public HttpResponseMessage CreateProducto(ProductoDTO productoDTO)
-        {
-            Marca marca = null;
-            Rubro rubro = null;
-            try
-            {
-                marca = db.Marcas.Where(marc => marc.Id == productoDTO.MarcaId).ToList().First();
-                rubro = db.Rubros.Where(rubr => rubr.Id == productoDTO.RubroId).ToList().First();
-            }
-            catch (Exception)
-            {
-                return Request.CreateResponse(HttpStatusCode.NotFound);
-            }
-            var producto = new Producto(productoDTO.CodigoDeBarra, productoDTO.Descripcion, productoDTO.Costo, productoDTO.MargenDeGanancia, productoDTO.PorcentajeIVA, marca, rubro);
-            return Request.CreateResponse(HttpStatusCode.OK, producto);
-        }
+        //[HttpPost]
+        //[Route("initialize")]
+        //[CustomAuthorization("ROLES_VENDEDOR")]
+        //public HttpResponseMessage CreateProducto(ProductoDTO productoDTO)
+        //{
+        //    Marca marca = null;
+        //    Rubro rubro = null;
+        //    try
+        //    {
+        //        marca = db.Marcas.Where(marc => marc.Id == productoDTO.MarcaId).ToList().First();
+        //        rubro = db.Rubros.Where(rubr => rubr.Id == productoDTO.RubroId).ToList().First();
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return Request.CreateResponse(HttpStatusCode.NotFound);
+        //    }
+        //    var producto = new Producto(productoDTO.CodigoDeBarra, productoDTO.Descripcion, productoDTO.Costo, productoDTO.MargenDeGanancia, productoDTO.PorcentajeIVA, marca, rubro);
+        //    return Request.CreateResponse(HttpStatusCode.OK, producto);
+        //}
 
         // POST: api/Productos
         [HttpPost]
         [Route("save")]
         public HttpResponseMessage SaveProducto(ProductoDTO productoDTO)
         {
+
             if (!ModelState.IsValid)
             {
                 return Request.CreateResponse(HttpStatusCode.BadRequest, productoDTO);
             }
-
-            var marca = db.Marcas.Where(marc => marc.Id == productoDTO.MarcaId).ToList().First();
-            var rubro = db.Rubros.Where(rubr => rubr.Id == productoDTO.RubroId).ToList().First();
-            var producto = new Producto(productoDTO.CodigoDeBarra, productoDTO.Descripcion, productoDTO.Costo, productoDTO.MargenDeGanancia, productoDTO.PorcentajeIVA, marca, rubro);
-            db.Productos.Add(producto);
-            db.SaveChanges();
+            var producto = AppLayer.SaveProducto(productoDTO);
 
             return Request.CreateResponse(HttpStatusCode.OK, producto);
         }
@@ -123,14 +127,11 @@ namespace TP1IdS_G15WebService.Controllers
         [ResponseType(typeof(Producto))]
         public IHttpActionResult DeleteProducto(int id)
         {
-            Producto producto = db.Productos.Find(id);
-            if (producto == null)
+            var producto = AppLayer.DeleteProducto(id);
+            if(producto == null)
             {
                 return NotFound();
             }
-
-            db.Productos.Remove(producto);
-            db.SaveChanges();
 
             return Ok(producto);
         }
@@ -139,14 +140,9 @@ namespace TP1IdS_G15WebService.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                AppLayer.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        private bool ProductoExists(int id)
-        {
-            return db.Productos.Count(e => e.CodigoDeBarra == id) > 0;
         }
     }
 }

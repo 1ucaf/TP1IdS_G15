@@ -65,17 +65,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataContext.cs" />
-    <Compile Include="Migrations\202202080004442_InitialMigration.cs" />
-    <Compile Include="Migrations\202202080004442_InitialMigration.designer.cs">
-      <DependentUpon>202202080004442_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202202281516019_InitialMigration.cs" />
+    <Compile Include="Migrations\202202281516019_InitialMigration.designer.cs">
+      <DependentUpon>202202281516019_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202202102245423_Productos.cs" />
-    <Compile Include="Migrations\202202102245423_Productos.designer.cs">
-      <DependentUpon>202202102245423_Productos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202102309185_Productos2.cs" />
-    <Compile Include="Migrations\202202102309185_Productos2.designer.cs">
-      <DependentUpon>202202102309185_Productos2.cs</DependentUpon>
+    <Compile Include="Migrations\202202281519334_NamesConvention.cs" />
+    <Compile Include="Migrations\202202281519334_NamesConvention.designer.cs">
+      <DependentUpon>202202281519334_NamesConvention.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repositorio.cs" />
@@ -92,14 +88,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202080004442_InitialMigration.resx">
-      <DependentUpon>202202080004442_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202281516019_InitialMigration.resx">
+      <DependentUpon>202202281516019_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202102245423_Productos.resx">
-      <DependentUpon>202202102245423_Productos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202102309185_Productos2.resx">
-      <DependentUpon>202202102309185_Productos2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202281519334_NamesConvention.resx">
+      <DependentUpon>202202281519334_NamesConvention.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

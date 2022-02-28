@@ -15,9 +15,14 @@ namespace TP1IdS_G15Modelo.Entidades
         public int PuntoDeVentaId { get; set; }
         public virtual PuntoDeVenta PuntoDeVenta { get; set; }
         public MedioDePago MedioDePago { get; set; }
-        public virtual Comprobante Comprobante { get; set; }
+        //public virtual Comprobante Comprobante { get; set; }
         public int ClienteId { get; set; }
         public virtual Cliente Cliente { get; set; }
+        /// <summary>
+        /// This property references the Id of the employee's user who made this Sale.
+        /// </summary>
+        public int EmpleadoId { get; set; }
+        public virtual Empleado Vendedor { get; set; }
         public int TipoFacturaId { get; set; }
         public virtual TipoFactura TipoFactura { get; set; }
         public virtual List<LineaDeVenta> LineasDeVentas { get; set; }
