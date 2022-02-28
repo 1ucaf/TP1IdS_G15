@@ -23,6 +23,12 @@ namespace TP1IdS_G15AccesoADatos
                 .ToTable("Marcas");
             modelBuilder.Entity<Rubro>()
                 .ToTable("Rubros");
+            modelBuilder.Entity<Venta>()
+                .ToTable("Ventas");
+            modelBuilder.Entity<TipoFactura>()
+                .ToTable("TiposDeFactura");
+            modelBuilder.Entity<Cliente>()
+                .ToTable("Clientes");
             modelBuilder.Entity<Sucursal>()
                 .ToTable("Sucursales");
             modelBuilder.Entity<PuntoDeVenta>()
@@ -42,6 +48,9 @@ namespace TP1IdS_G15AccesoADatos
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Marca> Marcas { get; set; }
         public DbSet<Rubro> Rubros { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<TipoFactura> TiposDeFactura { get; set; }
         public DbSet<Sucursal> Sucursales { get; set; }
         public DbSet<PuntoDeVenta> PuntosDeVenta { get; set; }
         public DbSet<Empleado> Empleados { get; set; }

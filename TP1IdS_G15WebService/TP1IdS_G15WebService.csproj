@@ -180,6 +180,7 @@
     <Compile Include="Controllers\ProductosController.cs" />
     <Compile Include="Controllers\RubrosController.cs" />
     <Compile Include="Controllers\SessionController.cs" />
+    <Compile Include="Controllers\VentasController.cs" />
     <Compile Include="TokenHandlers\TokenGenerator.cs" />
     <Compile Include="TokenHandlers\TokenManager.cs" />
     <Compile Include="TokenHandlers\TokenValidationHandler.cs" />

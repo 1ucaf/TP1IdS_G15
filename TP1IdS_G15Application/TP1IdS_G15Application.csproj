@@ -57,6 +57,7 @@
     <Compile Include="Models\ProductoDTO.cs" />
     <Compile Include="Models\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentasManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TP1IdS_G15AccesoADatos\TP1IdS_G15AccesoADatos.csproj">
